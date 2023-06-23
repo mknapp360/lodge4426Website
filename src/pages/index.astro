@@ -1,47 +1,16 @@
 ---
-  import '../css/style.css';
+  import Layout from '../layouts/Layout.astro'
+ import Showcase from '../components/Showcase.astro';
+ import Contact from '../components/Contact.astro';
 ---
-
-<astro-head>
-  <link rel="stylesheet" href="/css/style.css">
-</astro-head>
-
-<astro-body>
-	<section class="landing-page">
-		
-	</section>
-</astro-body>
+<Layout>
+  <Showcase/>
+  <Contact/>
+</Layout>
 
 <style>
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  .landing-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: fill;
-    background-image: url(/cs3.png)
-  }
 
-
-
-@media (max-width: 960px) {
-	
-  
-  
-  
-}
-@media (max-width: 500px) {
-  .landing-page {
-    grid-template-columns: 1fr;
-  }
-
-
-}
+  height: 70px;
+  background: var(--color-primary);
   
 </style>
