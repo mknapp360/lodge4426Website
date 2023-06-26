@@ -1,16 +1,36 @@
+---
+import hero from '../images/cs6.png'
+---
+
 <section class="showcase">
-    
+  <div class="showcase-image">
+    <img class="hero" src={hero} alt="" />
+  </div>
+
     
 
   </section>
 
   <style>
    
+   .showcase {
+  height: auto;
+  background-color: black;
+  padding: 30px;
+  height: 75vh;
+}
 
+.showcase-image {
+  text-align: center;
+}
 
+.hero {
+  max-width: 100%;
+  height: auto;
+}
     
 
-.showcase-blog {
+   .showcase-blog {
   min-height: 300px;
 }
 
@@ -43,27 +63,5 @@
 
 
 
-@media (max-width: 1920px) {
-    .showcase {
-        height: 75vh;
-        background-image: url(../images/cs5.png);
-        background-repeat: no-repeat;
-        background-image:center;
-        padding: 30px;
-    }
 
-    }
-
-    @media (max-width: 500px) {
-        .showcase {
-        height: 75vh;
-        background-image: url(../images/cs5.2.png);
-        background-image:fill;
-    
-        
-        
-    }
-    
-
-  }
   </style>
