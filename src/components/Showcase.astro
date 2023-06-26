@@ -2,14 +2,11 @@
 import hero from '../images/cs6.png'
 ---
 
-<section class="showcase">
-  <div class="showcase-image">
-    <img class="hero" src={hero} alt="" />
+<div class="showcase">
+  <div class="center">
+    <img src={hero} alt="Cinque Terre">
   </div>
-
-    
-
-  </section>
+</div>
 
   <style>
    
@@ -18,15 +15,19 @@ import hero from '../images/cs6.png'
   background-color: black;
   padding: 30px;
   height: 75vh;
+  position: relative;
 }
 
-.showcase-image {
+.center {
+  position: absolute;
+  width: 100%;
   text-align: center;
+  font-size: 18px;
 }
 
-.hero {
+img {
   max-width: 100%;
-  height: auto;
+  height: 75%;
 }
     
 
